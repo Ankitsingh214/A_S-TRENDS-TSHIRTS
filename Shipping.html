@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shipping Information</title>
+
+		<h1><center>Shipping Information</center></h1>
+		<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 300px;
+            margin: 100px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: forestgreen;
+        }
+        .error {
+            color: red;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+		<div class="container">
+    <form action="/register" method="POST">
+        <div class="error"></div>
+         <input type="text" name="First name" placeholder="First name" required>
+          <input type="text" name="Last name" placeholder="Last name" required>
+           <input type="text" name="Contact" placeholder="Contact" required>
+        <input type="text" name="Email-id" placeholder="Email-id" required>
+        <input type="text" name="Address-line 1" placeholder="Address line 1" required>
+        <input type="text" name="Address-line 2" placeholder="Address line 2" required>
+        <input type="text" name="Address-line 3" placeholder="Address line 3" required>
+        <input type="text" name="City" placeholder="City" required>
+        <input type="text" name="State" placeholder="State" required>
+        <input type="submit" value="Place order">
+</div>	
+		<footer>
+        		<h1>SHAH's TSHIRTS4U</h1>
+        		<p>You think it, We make it!</p>
+        </footer>
+</body>
+</html>
